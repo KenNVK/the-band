@@ -1,0 +1,118 @@
+/* PC */
+@media (min-width: 64em) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+
+/* Mobile & tablet */
+@media (max-width: 63.9375em) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .btn {
+    padding: 14px 16px;
+  }
+  .contact__form-control {
+    padding: 12px;
+  }
+
+  .content__contact-info {
+    line-height: 2;
+  }
+
+  .footer__socials-link {
+    font-size: 32px;
+  }
+
+  .footer__socials-link i {
+    margin: 0 6px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .header__subnav-link {
+    padding: 14px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    display: none;
+  }
+
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+
+  .modal--active {
+    display: block;
+    overflow: hidden;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+  .header__mobile--active {
+    height: auto;
+  }
+
+  .header__nav {
+    display: block;
+  }
+
+  .header__nav-item:first-child {
+    display: inline-block;
+  }
+
+  .header__nav-link {
+    width: 100%;
+    padding: 1px 24px;
+  }
+
+  .header__subnav-link {
+    padding: 14px 40px;
+  }
+
+  .header__search-btn {
+    display: none;
+  }
+
+  .header__menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .content__team--img {
+    width: 230px;
+  }
+
+  .content__contact-info {
+    line-height: 2;
+    margin-bottom: 32px;
+  }
+
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
+}
