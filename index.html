@@ -27,8 +27,12 @@
               <i class="header__nav-icon ri-arrow-down-s-fill"></i>
             </a>
             <ul class="header__subnav">
-              <li class="header__subnav-item"><a href="#" class="header__subnav-link">Merchandise</a></li>
-              <li class="header__subnav-item"><a href="#" class="header__subnav-link">Extras</a></li>
+              <li class="header__subnav-item">
+                <a href="#" class="header__subnav-link">Merchandise</a>
+              </li>
+              <li class="header__subnav-item">
+                <a href="#" class="header__subnav-link">Extras</a>
+              </li>
               <li class="header__subnav-item"><a href="#" class="header__subnav-link">Media</a></li>
             </ul>
           </li>
@@ -63,13 +67,15 @@
             </div>
             <p class="content__sub-heading">We love music</p>
             <p class="content__description">
-              We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, width: 230px;sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, width: 230px;sunt in culpa qui officia deserunt mollit anim id est laborum
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.
             </p>
             <div class="row">
               <div class="col l-4 m-4 s-12">
@@ -122,7 +128,9 @@
                     <div class="tour__places-body">
                       <h3 class="tour__places-heading">New York</h3>
                       <p class="tour__places-time">Fri 27 Nov 2016</p>
-                      <p class="tour__places-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <p class="tour__places-description">
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                      </p>
                     </div>
                     <div class="tour__places-buy-btn">
                       <a class="btn" href="#">Buy Tickets</a>
@@ -135,7 +143,9 @@
                     <div class="tour__places-body">
                       <h3 class="tour__places-heading">Paris</h3>
                       <p class="tour__places-time">Sat 28 Nov 2016</p>
-                      <p class="tour__places-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <p class="tour__places-description">
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                      </p>
                     </div>
                     <div class="tour__places-buy-btn">
                       <a class="btn" href="#">Buy Tickets</a>
@@ -148,7 +158,9 @@
                     <div class="tour__places-body">
                       <h3 class="tour__places-heading">San Francisco</h3>
                       <p class="tour__places-time">Sun 29 Nov 2016</p>
-                      <p class="tour__places-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <p class="tour__places-description">
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                      </p>
                     </div>
                     <div class="tour__places-buy-btn">
                       <a class="btn" href="#">Buy Tickets</a>
@@ -184,15 +196,30 @@
                 <form class="content__contact-form">
                   <div class="row">
                     <div class="col l-6 m-6 s-12">
-                      <input class="contact__form-control" required type="text" placeholder="Name" />
+                      <input
+                        class="contact__form-control"
+                        required
+                        type="text"
+                        placeholder="Name"
+                      />
                     </div>
                     <div class="col l-6 m-6 s-12">
-                      <input class="contact__form-control s-mt-8" required type="email" placeholder="Mail" />
+                      <input
+                        class="contact__form-control s-mt-8"
+                        required
+                        type="email"
+                        placeholder="Mail"
+                      />
                     </div>
                   </div>
                   <div class="row">
                     <div class="col s-12">
-                      <input class="contact__form-control mt-8" required type="text" placeholder="Message" />
+                      <input
+                        class="contact__form-control mt-8"
+                        required
+                        type="text"
+                        placeholder="Message"
+                      />
                     </div>
                   </div>
                   <input class="contact__form-btn btn mt-16" href="#" type="submit" value="SEND" />
@@ -219,7 +246,9 @@
         </div>
         <p class="footer__copyright">
           Powered by
-          <a class="footer__copyright-link" href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+          <a class="footer__copyright-link" href="https://www.w3schools.com/w3css/default.asp"
+            >w3.css</a
+          >
         </p>
       </div>
     </div>
@@ -233,8 +262,9 @@
     const memuBtn = document.querySelector(".header__menu-btn");
     const modal = document.querySelector(".modal");
     const subnav = document.querySelector(".header__subnav");
-    const subnavLinks = document.querySelectorAll(".header__subnav-link");
+    const navLinks = document.querySelectorAll(".header__nav-link");
     const navLinkHasSubNav = document.querySelector(".header__nav-link-has-sub");
+    const subnavLinks = document.querySelectorAll(".header__subnav-link");
     const imgs = [
       {
         img: "la.jpg",
@@ -256,7 +286,9 @@
 
     /* Handle slider */
     function slider(imgs, index = 0) {
-      sliding.style.background = `url(./assets/imgs/${imgs[index++].img}) top center / cover no-repeat`;
+      sliding.style.background = `url(./assets/imgs/${
+        imgs[index++].img
+      }) top center / cover no-repeat`;
       setInterval(() => {
         sliding.style.background = `url(./assets/imgs/${imgs[index].img}) top center / cover no-repeat`;
         heading.innerHTML = imgs[index].heading;
@@ -276,19 +308,20 @@
         subnav.classList.remove("header__subnav--active");
       }
     };
-    subnavLinks.forEach(subnavLink => {
-      subnavLink.onclick = () => hideMobileMenu();
+    navLinks.forEach(navLink => {
+      if (!navLink.classList.contains("header__nav-link-has-sub")) {
+        navLink.onclick = () => hideMobileMenu();
+      }
     });
+    subnavLinks.forEach(subnavLink => (subnavLink.onclick = () => hideMobileMenu()));
 
     function toggleMobileMenu() {
       header.classList.toggle("header__mobile--active");
       modal.classList.toggle("modal--active");
-      document.body.classList.toggle("modal--active");
     }
     function hideMobileMenu() {
       header.classList.remove("header__mobile--active");
       modal.classList.remove("modal--active");
-      document.body.classList.remove("modal--active");
       subnav.classList.remove("header__subnav--active");
     }
   </script>

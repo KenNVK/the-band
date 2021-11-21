@@ -81,8 +81,7 @@ html {
   font-size: 18px;
 }
 
-.header__search-btn,
-.header__menu-btn {
+.header__search-btn {
   height: var(--header-height);
   text-align: center;
   padding: 0 24px;
@@ -98,15 +97,6 @@ html {
 .header__search-btn:hover {
   background-color: #f44336;
   cursor: pointer;
-}
-
-.header__menu-btn:hover {
-  background-color: #ccc;
-  cursor: pointer;
-}
-
-.header__menu-btn:hover .header__menu-icon {
-  color: #000;
 }
 
 .slider {
@@ -341,3 +331,18 @@ html {
 }
 
 /* Modal css */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  display: none;
+}
+
+.modal--active {
+  display: block;
+  overflow: hidden;
+}

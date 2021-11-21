@@ -47,31 +47,31 @@
     display: none;
   }
 
-  .modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 100;
-    display: none;
-  }
-
   .s-mt-8 {
     margin-top: 8px !important;
   }
 
-  .modal--active {
-    display: block;
-    overflow: hidden;
-  }
-
   .header {
     overflow: hidden;
+    max-height: 50px;
+    transition: max-height 0.6s ease-in-out;
+  }
+
+  .header__menu-btn {
+    margin: 0 12px;
+    padding: 0 12px;
+  }
+
+  .header__menu-btn:hover {
+    cursor: pointer;
+  }
+
+  .header__menu-btn:hover .header__menu-icon {
+    color: #fff;
   }
 
   .header__mobile--active {
+    max-height: 500px;
     height: auto;
   }
 
