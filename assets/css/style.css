@@ -353,6 +353,18 @@ html {
   background: #fff;
   width: 900px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  animation: slide-down 0.3s linear;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal__content-header {
