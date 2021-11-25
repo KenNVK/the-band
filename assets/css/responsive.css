@@ -28,6 +28,10 @@
   .footer__socials-link i {
     margin: 0 6px;
   }
+
+  .modal__content {
+    max-width: calc(100% - 100px);
+  }
 }
 
 /* Tablet */
@@ -114,5 +118,9 @@
   .btn {
     text-align: center;
     width: 100%;
+  }
+
+  .modal__content {
+    max-width: calc(100% - 32px);
   }
 }

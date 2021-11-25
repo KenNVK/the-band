@@ -133,7 +133,7 @@
                       </p>
                     </div>
                     <div class="tour__places-buy-btn">
-                      <a class="btn" href="#">Buy Tickets</a>
+                      <a class="btn">Buy Tickets</a>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@
                       </p>
                     </div>
                     <div class="tour__places-buy-btn">
-                      <a class="btn" href="#">Buy Tickets</a>
+                      <a class="btn">Buy Tickets</a>
                     </div>
                   </div>
                 </div>
@@ -163,7 +163,7 @@
                       </p>
                     </div>
                     <div class="tour__places-buy-btn">
-                      <a class="btn" href="#">Buy Tickets</a>
+                      <a class="btn">Buy Tickets</a>
                     </div>
                   </div>
                 </div>
@@ -252,77 +252,9 @@
         </p>
       </div>
     </div>
+
     <div class="modal"></div>
+
+    <script src="./assets/main.js" type="text/javascript"></script>
   </body>
-  <script>
-    const sliding = document.querySelector(".slider");
-    const heading = document.querySelector(".slider__content-heading");
-    const desc = document.querySelector(".slider__content-description");
-    const header = document.querySelector(".header");
-    const memuBtn = document.querySelector(".header__menu-btn");
-    const modal = document.querySelector(".modal");
-    const subnav = document.querySelector(".header__subnav");
-    const navLinks = document.querySelectorAll(".header__nav-link");
-    const navLinkHasSubNav = document.querySelector(".header__nav-link-has-sub");
-    const subnavLinks = document.querySelectorAll(".header__subnav-link");
-    const imgs = [
-      {
-        img: "la.jpg",
-        heading: "Los Angeles",
-        desc: "We had the best time playing at Venice Beach!",
-      },
-
-      {
-        img: "chicago.jpg",
-        heading: "Chicago",
-        desc: "Thank you, Chicago - A night we won't forget.",
-      },
-      {
-        img: "ny.jpg",
-        heading: "New York",
-        desc: "The atmosphere in New York is lorem ipsum.",
-      },
-    ];
-
-    /* Handle slider */
-    function slider(imgs, index = 0) {
-      sliding.style.background = `url(./assets/imgs/${
-        imgs[index++].img
-      }) top center / cover no-repeat`;
-      setInterval(() => {
-        sliding.style.background = `url(./assets/imgs/${imgs[index].img}) top center / cover no-repeat`;
-        heading.innerHTML = imgs[index].heading;
-        desc.innerHTML = imgs[index].desc;
-        index++;
-        index %= imgs.length;
-      }, 3000);
-    }
-    slider(imgs);
-
-    /* Handle menu */
-    memuBtn.onclick = () => toggleMobileMenu();
-    modal.onclick = () => hideMobileMenu();
-    navLinkHasSubNav.onclick = () => subnav.classList.toggle("header__subnav--active");
-    document.onclick = e => {
-      if (!navLinkHasSubNav.contains(e.target)) {
-        subnav.classList.remove("header__subnav--active");
-      }
-    };
-    navLinks.forEach(navLink => {
-      if (!navLink.classList.contains("header__nav-link-has-sub")) {
-        navLink.onclick = () => hideMobileMenu();
-      }
-    });
-    subnavLinks.forEach(subnavLink => (subnavLink.onclick = () => hideMobileMenu()));
-
-    function toggleMobileMenu() {
-      header.classList.toggle("header__mobile--active");
-      modal.classList.toggle("modal--active");
-    }
-    function hideMobileMenu() {
-      header.classList.remove("header__mobile--active");
-      modal.classList.remove("modal--active");
-      subnav.classList.remove("header__subnav--active");
-    }
-  </script>
 </html>
