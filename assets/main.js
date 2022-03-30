@@ -108,9 +108,11 @@ btnBuyTickets.forEach(btn => {
 function toggleMobileMenu() {
   header.classList.toggle("header__mobile--active");
   modal.classList.toggle("modal--active");
+  document.quyerySelector("body").style.overflow = "hidden";
 }
 function hideMobileMenu() {
   header.classList.remove("header__mobile--active");
   modal.classList.remove("modal--active");
   subnav.classList.remove("header__subnav--active");
+  document.quyerySelector("body").style.overflow = "visible";
 }
